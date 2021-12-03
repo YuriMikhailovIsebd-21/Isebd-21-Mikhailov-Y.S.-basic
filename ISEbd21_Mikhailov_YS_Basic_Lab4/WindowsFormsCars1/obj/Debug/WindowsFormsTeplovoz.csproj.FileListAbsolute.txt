@@ -1,0 +1,11 @@
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\bin\Debug\WindowsFormsTeplovoz.exe.config
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\bin\Debug\WindowsFormsTeplovoz.exe
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\bin\Debug\WindowsFormsTeplovoz.pdb
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.csproj.AssemblyReference.cache
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.DepoForm.resources
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.FormTeplovoz.resources
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.Properties.Resources.resources
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.csproj.GenerateResource.cache
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.exe
+C:\Users\Юрий\OneDrive\Desktop\lab4\WindowsFormsCars1\obj\Debug\WindowsFormsTeplovoz.pdb
