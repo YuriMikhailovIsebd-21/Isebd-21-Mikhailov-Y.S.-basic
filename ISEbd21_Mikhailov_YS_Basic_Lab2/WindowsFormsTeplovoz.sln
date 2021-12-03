@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormsTeplovoz", "ISEbd21_Mikhailov_YS_Basic\WindowsFormsTeplovoz.csproj", "{6C93C773-2F4C-4501-82DF-CF6CDD42905F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C93C773-2F4C-4501-82DF-CF6CDD42905F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C93C773-2F4C-4501-82DF-CF6CDD42905F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C93C773-2F4C-4501-82DF-CF6CDD42905F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C93C773-2F4C-4501-82DF-CF6CDD42905F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3D004BF-8090-46E7-9934-531121603B1B}
+	EndGlobalSection
+EndGlobal
