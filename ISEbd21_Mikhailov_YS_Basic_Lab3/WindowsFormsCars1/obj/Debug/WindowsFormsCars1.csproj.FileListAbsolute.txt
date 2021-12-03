@@ -1,0 +1,105 @@
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojAssemblyReference.cache
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\user\source\repos\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojAssemblyReference.cache
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+E:\ТП\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+D:\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+D:\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+D:\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.AssemblyReference.cache
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+D:\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\user\Desktop\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojAssemblyReference.cache
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.AssemblyReference.cache
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+G:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+E:\ГОТОВАЯ\Новая папка\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\Admin\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojResolveAssemblyReference.cache
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\4ResT\Desktop\WindowsFormsCars1\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.Cache
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csprojResolveAssemblyReference.cache
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.GavanForm.resources
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\4ResT\Desktop\klementyeva\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.Cache
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.AssemblyReference.cache
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.GavanForm.resources
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.FormCar.resources
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\Юрий\OneDrive\Desktop\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe.config
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.exe
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\bin\Debug\WindowsFormsCars1.pdb
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.AssemblyReference.cache
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.Properties.Resources.resources
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.GenerateResource.cache
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.exe
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\WindowsFormsCars1.pdb
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\ISEbd21_Mikhailov_YS_lab3.DepoForm.resources
+C:\Users\Юрий\OneDrive\Desktop\3_klemente\klementyeva_lab3\WindowsFormsCars1\obj\Debug\ISEbd21_Mikhailov_YS_lab3.FormTeplovoz.resources
