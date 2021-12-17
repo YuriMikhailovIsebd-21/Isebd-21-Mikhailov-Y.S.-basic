@@ -6,17 +6,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsTeplovoz
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTeplo());
-        }
-    }
+	static class Program
+	{
+		/// <summary>
+		/// Главная точка входа для приложения.
+		/// </summary>
+		[STAThread]
+		static void Main()
+		{
+			Application.EnableVisualStyles();
+			Application.SetCompatibleTextRenderingDefault(false);
+			Application.Run(new DepoForm());
+		}
+	}
 }

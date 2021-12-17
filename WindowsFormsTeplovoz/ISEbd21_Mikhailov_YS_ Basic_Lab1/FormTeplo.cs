@@ -12,71 +12,63 @@ namespace WindowsFormsTeplovoz
 {
     public partial class FormTeplo : Form
     {
-        private ITransport Teplo;
+        private ITransport teplovoz;
+
         public FormTeplo()
         {
             InitializeComponent();
         }
+
+        public void setLokomotiv(ITransport teplovoz)
+        {
+            this.teplovoz = teplovoz;
+            Draw();
+        }
+
         private void Draw()
         {
-            Bitmap bmp = new Bitmap(pictureBoxTeplo.Width, pictureBoxTeplo.Height);
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            Teplo.DrawTransport(gr);
-            pictureBoxTeplo.Image = bmp;
+            teplovoz?.DrawTransport(gr);
+            pictureBox1.Image = bmp;
         }
 
-        /// <summary>
- /// Обработка нажатия кнопки "Create"
- /// </summary>
- /// <param name="sender"></param>
- /// <param name="e"></param>
- private void ButtonCreate_Click(object sender, EventArgs e)
+        private void btnСreateLokomotiv_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            Teplo = new Lokomotiv(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue);
-            Teplo.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTeplo.Width,
-           pictureBoxTeplo.Height);
-            Draw();
-        }
-        /// <summary>
-        /// Обработка нажатия кнопки "Createn"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonCreaten_Click(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            Teplo = new Teplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue,
-           Color.Brown, true, true);
-            Teplo.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTeplo.Width,
-           pictureBoxTeplo.Height);
+            teplovoz = new Lokomotiv(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black);            
+            teplovoz.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
             Draw();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void buttonMove_Click (object sender, EventArgs e)
+        private void buttonMove_Click(object sender, EventArgs e)
         {
+            //получаем имя кнопки
             string name = (sender as Button).Name;
             switch (name)
             {
-                case "ButtonUp":
-                    Teplo.MoveTransport(Direction.Up);
+                case "buttonUp1":
+                    teplovoz?.MoveTransport(Direction.Up);
                     break;
-                case "ButtonDown":
-                    Teplo.MoveTransport(Direction.Down);
+                case "buttonDown1":
+                    teplovoz?.MoveTransport(Direction.Down);
                     break;
-                case "ButtonLeft":
-                    Teplo.MoveTransport(Direction.Left);
+                case "buttonLeft1":
+                    teplovoz?.MoveTransport(Direction.Left);
                     break;
-                case "ButtonRight": 
-                    Teplo.MoveTransport(Direction.Right);
+                case "buttonRight1":
+                    teplovoz?.MoveTransport(Direction.Right);
                     break;
             }
-            Draw(); 
+            Draw();
+        }
+
+        private void btnCreateTeplovoz_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            teplovoz = new Teplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black, Color.Red, true, true);
+            teplovoz.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
+            Draw();
         }
     }
-}
+} 
