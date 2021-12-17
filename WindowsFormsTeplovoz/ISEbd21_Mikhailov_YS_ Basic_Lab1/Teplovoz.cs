@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace WindowsFormTeplo
 {
-    class Teplovoz : Lokomotiv
+    class Teplovoz : Lokomotiv, IEquatable<Teplovoz>
     {
         public Color DopColor { private set; get; }
 
@@ -73,6 +73,32 @@ namespace WindowsFormTeplo
             return $"{base.ToString()}{separator}{DopColor.Name}{separator}{Tube}{separator}{Wheels}";
         }
 
+        public bool Equals(Teplovoz other)
+        {
+            if (DopColor == other.DopColor && Tube == other.Tube && Wheels == other.Wheels)
+            {
+                return base.Equals(other);
+            }
+            else
+            {
+                return false;
+            }
+        }
 
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is Teplovoz))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(obj as Teplovoz);
+            }
+        }
     }
 }
