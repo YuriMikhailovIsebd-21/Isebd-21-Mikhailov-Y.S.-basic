@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
     public interface ITransport
     {
@@ -14,5 +14,7 @@ namespace WindowsFormsTeplovoz
         void MoveTransport(Direction direction);
 
         void DrawTransport(Graphics g);
+
+        void setMainColor(Color mainColor);
     }
 }

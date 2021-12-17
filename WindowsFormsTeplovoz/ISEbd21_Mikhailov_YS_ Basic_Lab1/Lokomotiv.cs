@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
-    class Lokomotiv : Vehicle
+    public class Lokomotiv : Vehicle
     {
-        private readonly int carWidth = 100;
-        private readonly int carHeight = 30;
+        private readonly int carWidth = 150;
+        private readonly int carHeight = 50;
 
         public Lokomotiv(int maxSpeed, float weight, Color mainColor)
         {
@@ -58,7 +58,6 @@ namespace WindowsFormsTeplovoz
 
         public override void DrawTransport(Graphics g)
         {
-           
             Pen pen = new Pen(MainColor);
             //body
             g.DrawRectangle(pen, _startPosX, _startPosY + 15, 150, 20);
@@ -82,7 +81,7 @@ namespace WindowsFormsTeplovoz
             //windows
             g.DrawRectangle(Pens.Blue, _startPosX + 13, _startPosY + 3, 10, 10);
             g.DrawRectangle(Pens.Blue, _startPosX + 33, _startPosY + 3, 10, 10);
-            g.DrawRectangle(Pens.Blue, _startPosX + 130, _startPosY + 3, 10, 10); ;
+            g.DrawRectangle(Pens.Blue, _startPosX + 130, _startPosY + 3, 10, 10);
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
     public abstract class Vehicle : ITransport
     {
@@ -34,5 +34,10 @@ namespace WindowsFormsTeplovoz
         public abstract void DrawTransport(Graphics g);
 
         public abstract void MoveTransport(Direction direction);
+
+        public void setMainColor(Color mainColor)
+        {
+            MainColor = mainColor;
+        }
     }
 }

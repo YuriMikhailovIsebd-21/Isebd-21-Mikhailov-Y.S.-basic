@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
+	
 	static class Program
 	{
+		
 		/// <summary>
 		/// Главная точка входа для приложения.
 		/// </summary>
