@@ -8,20 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
-    public partial class FormTeplo : Form
+    public partial class FormLoko : Form
     {
-        private ITransport teplovoz;
+        private ITransport car;
 
-        public FormTeplo()
+        public FormLoko()
         {
             InitializeComponent();
         }
 
-        public void setLokomotiv(ITransport teplovoz)
+        public void setLokomotiv(ITransport car)
         {
-            this.teplovoz = teplovoz;
+            this.car = car;
             Draw();
         }
 
@@ -29,15 +29,15 @@ namespace WindowsFormsTeplovoz
         {
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            teplovoz?.DrawTransport(gr);
+            car?.DrawTransport(gr);
             pictureBox1.Image = bmp;
         }
 
-        private void btnСreateLokomotiv_Click(object sender, EventArgs e)
+        private void btnСreateBoat_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            teplovoz = new Lokomotiv(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black);            
-            teplovoz.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
+            car = new Lokomotiv(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black);            
+            car.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
             Draw();
         }
 
@@ -48,26 +48,26 @@ namespace WindowsFormsTeplovoz
             switch (name)
             {
                 case "buttonUp1":
-                    teplovoz?.MoveTransport(Direction.Up);
+                    car?.MoveTransport(Direction.Up);
                     break;
                 case "buttonDown1":
-                    teplovoz?.MoveTransport(Direction.Down);
+                    car?.MoveTransport(Direction.Down);
                     break;
                 case "buttonLeft1":
-                    teplovoz?.MoveTransport(Direction.Left);
+                    car?.MoveTransport(Direction.Left);
                     break;
                 case "buttonRight1":
-                    teplovoz?.MoveTransport(Direction.Right);
+                    car?.MoveTransport(Direction.Right);
                     break;
             }
             Draw();
         }
 
-        private void btnCreateTeplovoz_Click(object sender, EventArgs e)
+        private void btnCreateCater_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            teplovoz = new Teplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black, Color.Red, true, true);
-            teplovoz.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
+            car = new Teplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Black, Color.Red, true, true);
+            car.SetPosition(rnd.Next(20, 100), rnd.Next(50, 200), pictureBox1.Width, pictureBox1.Height);
             Draw();
         }
     }

@@ -8,37 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsTeplovoz
+namespace ISEbd_21_Mikhailov_YS_lab5
 {
     public partial class DepoForm : Form
     {
-
-        private readonly ParkingCollection parkingCollection;
-
         public DepoForm()
         {
             InitializeComponent();
-            parkingCollection = new ParkingCollection(pictureBoxParking.Width, pictureBoxParking.Height);
-            Draw();
+            parkingColl = new ParkingCollection(pictureBoxParking.Width, pictureBoxParking.Height);
         }
+
+        private readonly ParkingCollection parkingColl;
 
         private void ReloadLevels()
         {
-            int index = listBoxParkings.SelectedIndex;
-            listBoxParkings.Items.Clear();
-            for (int i = 0; i < parkingCollection.Keys.Count; i++)
+            int index = lBParking.SelectedIndex;
+            lBParking.Items.Clear();
+            for (int i = 0; i < parkingColl.Keys.Count; i++)
             {
-                listBoxParkings.Items.Add(parkingCollection.Keys[i]);
+                lBParking.Items.Add(parkingColl.Keys[i]);
             }
-            if (listBoxParkings.Items.Count > 0 && (index == -1 || index >=
-           listBoxParkings.Items.Count))
+            if (lBParking.Items.Count > 0 && (index == -1 || index >= lBParking.Items.Count))
             {
-                listBoxParkings.SelectedIndex = 0;
+                lBParking.SelectedIndex = 0;
             }
-            else if (listBoxParkings.Items.Count > 0 && index > -1 && index <
-           listBoxParkings.Items.Count)
+            else if (lBParking.Items.Count > 0 && index > -1 && index < lBParking.Items.Count)
             {
-                listBoxParkings.SelectedIndex = index;
+                lBParking.SelectedIndex = index;
             }
         }
 
@@ -46,81 +42,66 @@ namespace WindowsFormsTeplovoz
         {
             Bitmap bmp = new Bitmap(pictureBoxParking.Width, pictureBoxParking.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            if (listBoxParkings.SelectedIndex > -1)
-            {//если выбран один из пуктов в listBox (при старте программы ни один пункт не будет выбран и может возникнуть ошибка, если мы попытаемся обратиться к элементу listBox
-                parkingCollection[listBoxParkings.SelectedItem.ToString()].Draw(gr);
-            }
-            else
-            {
-                gr.FillRectangle(new SolidBrush(Color.Transparent), 0, 0, pictureBoxParking.Width, pictureBoxParking.Height);
-            }
+            parkingColl[lBParking.SelectedItem.ToString()].Draw(gr);
             pictureBoxParking.Image = bmp;
         }
 
-
-        private void buttonDelParking_Click(object sender, EventArgs e)
+        private void btnParkAdd_Click(object sender, EventArgs e)
         {
-            if (listBoxParkings.SelectedIndex > -1)
+            if (string.IsNullOrEmpty(tBParkName.Text))
             {
-                if (MessageBox.Show($"Удалить парковку { listBoxParkings.SelectedItem.ToString()}?", "Удаление", MessageBoxButtons.YesNo,
+                MessageBox.Show("Введите название парковки", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            parkingColl.AddParking(tBParkName.Text);
+            ReloadLevels();
+        }
+
+        private void btnRemovePark_Click(object sender, EventArgs e)
+        {
+            if (lBParking.SelectedIndex > -1)
+            {
+                if (MessageBox.Show($"Удалить парковку { lBParking.SelectedItem.ToString()}?", "Удаление", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    parkingCollection.DelParking(textBoxNewLevelName.Text);
+                    parkingColl.DelParking(lBParking.SelectedItem.ToString());
                     ReloadLevels();
                 }
             }
         }
 
-        private void buttonAddParking_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxNewLevelName.Text))
-            {
-                MessageBox.Show("Введите название парковки", "Ошибка",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            parkingCollection.AddParking(textBoxNewLevelName.Text);
-            ReloadLevels();
-        }
-
-
-
-
         private void btnTake_Click(object sender, EventArgs e)
-       {
-            if (listBoxParkings.SelectedIndex > -1 && maskedTextBox.Text != "")
+        {
+            if (mTBLot.Text != "")
             {
-                var car = parkingCollection[listBoxParkings.SelectedItem.ToString()] - Convert.ToInt32(maskedTextBox.Text);
+                var car = parkingColl[lBParking.SelectedItem.ToString()] - Convert.ToInt32(mTBLot.Text);
                 if (car != null)
                 {
-                    FormTeplo form = new FormTeplo();
+                    FormLoko form = new FormLoko();
                     form.setLokomotiv(car);
                     form.ShowDialog();
                 }
+                mTBLot.Text = "";
                 Draw();
             }
         }
 
         private void btnParkTeplovoz_Click(object sender, EventArgs e)
         {
-            if (listBoxParkings.SelectedIndex > -1)
+            ColorDialog dialog = new ColorDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog dialog = new ColorDialog();
-                if (dialog.ShowDialog() == DialogResult.OK)
+                ColorDialog dialogDop = new ColorDialog();
+                if (dialogDop.ShowDialog() == DialogResult.OK)
                 {
-                    ColorDialog dialogDop = new ColorDialog();
-                    if (dialogDop.ShowDialog() == DialogResult.OK)
+                    var car = new Teplovoz(100, 1000, dialog.Color, dialogDop.Color, true, true);
+                    if (parkingColl[lBParking.SelectedItem.ToString()] + car)
                     {
-                        var autotrain = new Teplovoz(100, 1000, dialog.Color, dialogDop.Color,
-                        true, true);
-                        if (parkingCollection[listBoxParkings.SelectedItem.ToString()] + autotrain)
-                        {
-                            Draw();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Депо переполнен!");
-                        }
+                        Draw();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Депо переполнено");
                     }
                 }
             }
@@ -128,30 +109,46 @@ namespace WindowsFormsTeplovoz
 
         private void btnParkLokomotiv_Click(object sender, EventArgs e)
         {
-            if (listBoxParkings.SelectedIndex > -1)
+            ColorDialog dialog = new ColorDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog dialog = new ColorDialog();
-                if (dialog.ShowDialog() == DialogResult.OK)
+                var car = new Lokomotiv(100, 1000, dialog.Color);
+                if (parkingColl[lBParking.SelectedItem.ToString()] + car)
                 {
-                    var car = new Lokomotiv(100, 1000, dialog.Color);
-                    if (parkingCollection[listBoxParkings.SelectedItem.ToString()] + car)
-                    {
-                        Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Депо переполнен!");
-                    }
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Депо переполнено");
                 }
             }
         }
 
-
-        private void listBoxParkings_SelectedIndexChanged(object sender, EventArgs e)
+        private void lBParking_SelectedIndexChanged(object sender, EventArgs e)
         {
             Draw();
         }
 
+        private void AddLoko(Vehicle car)
+        {
+            if (car != null && lBParking.SelectedIndex > -1)
+            {
+                if ((parkingColl[lBParking.SelectedItem.ToString()]) + car)
+                {
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Машину не удалось поставить");
+                }
+            }
+        }
 
+        private void btnChoose_Click(object sender, EventArgs e)
+        {
+            var formLokoConfig = new FormLokoConfig();
+            formLokoConfig.AddEvent(AddLoko);
+            formLokoConfig.Show();
+        }
     }
 }
