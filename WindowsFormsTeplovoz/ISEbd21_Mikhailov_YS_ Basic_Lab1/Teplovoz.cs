@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     class Teplovoz : Lokomotiv
     {
@@ -22,6 +22,22 @@ namespace ISEbd_21_Mikhailov_YS_lab5
             Tube = tube;
             Wheels = wheels;
         }
+
+
+        public Teplovoz(string info) : base(info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 6)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+                Tube = Convert.ToBoolean(strs[4]);
+                Wheels = Convert.ToBoolean(strs[5]);
+            }
+        }
+
 
         public void setDopColor(Color dopColor)
         {
@@ -50,6 +66,11 @@ namespace ISEbd_21_Mikhailov_YS_lab5
                 g.DrawLine(pen, _startPosX + 92, _startPosY + 40, _startPosX + 92, _startPosY + 55);
                 g.DrawLine(pen, _startPosX + 123, _startPosY + 40, _startPosX + 123, _startPosY + 55);
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}{separator}{DopColor.Name}{separator}{Tube}{separator}{Wheels}";
         }
 
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     public partial class DepoForm : Form
     {
@@ -77,8 +77,8 @@ namespace ISEbd_21_Mikhailov_YS_lab5
                 var car = parkingColl[lBParking.SelectedItem.ToString()] - Convert.ToInt32(mTBLot.Text);
                 if (car != null)
                 {
-                    FormLoko form = new FormLoko();
-                    form.setLokomotiv(car);
+                    FormTeplo form = new FormTeplo();
+                    form.setBoat(car);
                     form.ShowDialog();
                 }
                 mTBLot.Text = "";
@@ -86,7 +86,7 @@ namespace ISEbd_21_Mikhailov_YS_lab5
             }
         }
 
-        private void btnParkTeplovoz_Click(object sender, EventArgs e)
+        private void btnParkCater_Click(object sender, EventArgs e)
         {
             ColorDialog dialog = new ColorDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -101,13 +101,13 @@ namespace ISEbd_21_Mikhailov_YS_lab5
                     }
                     else
                     {
-                        MessageBox.Show("Депо переполнено");
+                        MessageBox.Show("Парковка переполнена");
                     }
                 }
             }
         }
 
-        private void btnParkLokomotiv_Click(object sender, EventArgs e)
+        private void btnParkBoat_Click(object sender, EventArgs e)
         {
             ColorDialog dialog = new ColorDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -119,7 +119,7 @@ namespace ISEbd_21_Mikhailov_YS_lab5
                 }
                 else
                 {
-                    MessageBox.Show("Депо переполнено");
+                    MessageBox.Show("Парковка переполнена");
                 }
             }
         }
@@ -129,7 +129,7 @@ namespace ISEbd_21_Mikhailov_YS_lab5
             Draw();
         }
 
-        private void AddLoko(Vehicle car)
+        private void AddCar(Vehicle car)
         {
             if (car != null && lBParking.SelectedIndex > -1)
             {
@@ -146,9 +146,44 @@ namespace ISEbd_21_Mikhailov_YS_lab5
 
         private void btnChoose_Click(object sender, EventArgs e)
         {
-            var formLokoConfig = new FormLokoConfig();
-            formLokoConfig.AddEvent(AddLoko);
+            var formLokoConfig = new FormTeploConfig();
+            formLokoConfig.AddEvent(AddCar);
             formLokoConfig.Show();
         }
+
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (parkingColl.SaveData(saveFileDialog.FileName))
+                {
+                    MessageBox.Show("Сохранение прошло успешно", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Не сохранилось", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void загрузитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (parkingColl.LoadData(openFileDialog.FileName))
+                {
+                    MessageBox.Show("Загрузили", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ReloadLevels();
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Не загрузили", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+
     }
 }

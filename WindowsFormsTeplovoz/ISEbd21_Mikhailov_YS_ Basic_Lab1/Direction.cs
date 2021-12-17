@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     public enum Direction
     {

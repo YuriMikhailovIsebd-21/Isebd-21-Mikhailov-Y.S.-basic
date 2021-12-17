@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     public abstract class Vehicle : ITransport
     {

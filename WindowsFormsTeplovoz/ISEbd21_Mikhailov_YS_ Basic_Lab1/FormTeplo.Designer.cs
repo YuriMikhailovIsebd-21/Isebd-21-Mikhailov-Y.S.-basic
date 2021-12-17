@@ -1,33 +1,33 @@
-﻿namespace ISEbd_21_Mikhailov_YS_lab5
+﻿namespace WindowsFormsCars1
 {
-    public partial class FormLoko
-    {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+	 public partial class FormTeplo
+	{
+		/// <summary>
+		/// Обязательная переменная конструктора.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		/// <summary>
+		/// Освободить все используемые ресурсы.
+		/// </summary>
+		/// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
 
-        #region Код, автоматически созданный конструктором форм Windows
+		#region Код, автоматически созданный конструктором форм Windows
 
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
-        private void InitializeComponent()
-        {
+		/// <summary>
+		/// Требуемый метод для поддержки конструктора — не изменяйте 
+		/// содержимое этого метода с помощью редактора кода.
+		/// </summary>
+		private void InitializeComponent()
+		{
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnСreateBoat = new System.Windows.Forms.Button();
             this.buttonLeft1 = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             // buttonLeft1
             // 
             this.buttonLeft1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLeft1.BackgroundImage = global::ISEbd_21_Mikhailov_YS_lab5.Properties.Resources.влево_кружок;
+            this.buttonLeft1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.влево_кружок;
             this.buttonLeft1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLeft1.Location = new System.Drawing.Point(774, 425);
             this.buttonLeft1.Name = "buttonLeft1";
@@ -73,7 +73,7 @@
             // buttonRight1
             // 
             this.buttonRight1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRight1.BackgroundImage = global::ISEbd_21_Mikhailov_YS_lab5.Properties.Resources.вправо111;
+            this.buttonRight1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вправо111;
             this.buttonRight1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRight1.Location = new System.Drawing.Point(846, 425);
             this.buttonRight1.Name = "buttonRight1";
@@ -85,7 +85,7 @@
             // buttonUp1
             // 
             this.buttonUp1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUp1.BackgroundImage = global::ISEbd_21_Mikhailov_YS_lab5.Properties.Resources.вверх_кружок1;
+            this.buttonUp1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вверх_кружок1;
             this.buttonUp1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonUp1.Location = new System.Drawing.Point(810, 392);
             this.buttonUp1.Name = "buttonUp1";
@@ -97,7 +97,7 @@
             // buttonDown1
             // 
             this.buttonDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDown1.BackgroundImage = global::ISEbd_21_Mikhailov_YS_lab5.Properties.Resources.вниз_кружок;
+            this.buttonDown1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вниз_кружок;
             this.buttonDown1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDown1.Location = new System.Drawing.Point(810, 425);
             this.buttonDown1.Name = "buttonDown1";
@@ -132,22 +132,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
-        }
+		}
 
-        #endregion
+		#endregion
 
-        private System.Windows.Forms.PictureBox pictureBoxCars;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonLeft;
-        private System.Windows.Forms.Button buttonRight;
-        private System.Windows.Forms.Button buttonDown;
-        protected System.Windows.Forms.Button buttonUp;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnСreateBoat;
-        private System.Windows.Forms.Button buttonLeft1;
-        private System.Windows.Forms.Button buttonRight1;
-        private System.Windows.Forms.Button buttonUp1;
-        private System.Windows.Forms.Button buttonDown1;
+		private System.Windows.Forms.PictureBox pictureBoxCars;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button buttonLeft;
+		private System.Windows.Forms.Button buttonRight;
+		private System.Windows.Forms.Button buttonDown;
+		protected System.Windows.Forms.Button buttonUp;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Button btnСreateBoat;
+		private System.Windows.Forms.Button buttonLeft1;
+		private System.Windows.Forms.Button buttonRight1;
+		private System.Windows.Forms.Button buttonUp1;
+		private System.Windows.Forms.Button buttonDown1;
         private System.Windows.Forms.Button btnCreateCater;
     }
 }

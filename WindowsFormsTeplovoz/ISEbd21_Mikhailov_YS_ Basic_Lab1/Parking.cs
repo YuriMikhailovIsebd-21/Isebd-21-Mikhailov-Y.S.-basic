@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     public class Parking<T> where T : class, ITransport
     {
@@ -79,5 +79,16 @@ namespace ISEbd_21_Mikhailov_YS_lab5
                 g.DrawLine(pen, i * _placeSizeWidth, 0, i * _placeSizeWidth, (pictureHeight / _placeSizeHeight) * _placeSizeHeight);
             }
         }
+
+        public T GetNext(int index)
+        {
+            if (index < 0 || index >= _places.Count)
+            {
+                return null;
+            }
+            return _places[index];
+        }
+
+
     }
 }

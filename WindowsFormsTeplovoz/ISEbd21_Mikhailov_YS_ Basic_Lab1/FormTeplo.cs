@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
-    public partial class FormLoko : Form
+    public partial class FormTeplo : Form
     {
         private ITransport car;
 
-        public FormLoko()
+        public FormTeplo()
         {
             InitializeComponent();
         }
 
-        public void setLokomotiv(ITransport car)
+        public void setBoat(ITransport car)
         {
             this.car = car;
             Draw();
