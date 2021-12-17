@@ -12,7 +12,7 @@ namespace WindowsFormsTeplovoz
 {
     public partial class FormTeplo : Form
     {
-        private Teplovoz Teplo;
+        private ITransport Teplo;
         public FormTeplo()
         {
             InitializeComponent();
@@ -21,23 +21,38 @@ namespace WindowsFormsTeplovoz
         {
             Bitmap bmp = new Bitmap(pictureBoxTeplo.Width, pictureBoxTeplo.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            Teplo.DrawTeplo(gr);
+            Teplo.DrawTransport(gr);
             pictureBoxTeplo.Image = bmp;
         }
 
         /// <summary>
-        /// 
+ /// Обработка нажатия кнопки "Create"
+ /// </summary>
+ /// <param name="sender"></param>
+ /// <param name="e"></param>
+ private void ButtonCreate_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            Teplo = new Lokomotiv(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue);
+            Teplo.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTeplo.Width,
+           pictureBoxTeplo.Height);
+            Draw();
+        }
+        /// <summary>
+        /// Обработка нажатия кнопки "Createn"
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonCreate_Click(object sender, EventArgs e)
+        private void ButtonCreaten_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            Teplo = new Teplovoz();
-            Teplo.Init( Color.Black, Color.Blue,true, true, true , true);
-            Teplo.SetPosition(rnd.Next(420, 600), rnd.Next(100, 381), pictureBoxTeplo.Width, pictureBoxTeplo.Height);
+            Teplo = new Teplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue,
+           Color.Brown, true, true);
+            Teplo.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTeplo.Width,
+           pictureBoxTeplo.Height);
             Draw();
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -49,23 +64,19 @@ namespace WindowsFormsTeplovoz
             switch (name)
             {
                 case "ButtonUp":
-                    Teplo.MoveTeplo(Direction.Up);
+                    Teplo.MoveTransport(Direction.Up);
                     break;
                 case "ButtonDown":
-                    Teplo.MoveTeplo(Direction.Down);
+                    Teplo.MoveTransport(Direction.Down);
                     break;
                 case "ButtonLeft":
-                    Teplo.MoveTeplo(Direction.Left);
+                    Teplo.MoveTransport(Direction.Left);
                     break;
                 case "ButtonRight": 
-                    Teplo.MoveTeplo(Direction.Right);
-                    break;
-                case "buttonMove_Click":
+                    Teplo.MoveTransport(Direction.Right);
                     break;
             }
             Draw(); 
         }
-
-        
     }
 }
