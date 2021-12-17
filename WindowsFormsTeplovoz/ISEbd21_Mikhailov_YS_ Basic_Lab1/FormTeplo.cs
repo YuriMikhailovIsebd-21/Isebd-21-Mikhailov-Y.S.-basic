@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsCars1
+namespace WindowsFormTeplo
 {
-    public partial class FormTeplo : Form
+    public partial class FormLoko : Form
     {
         private ITransport car;
 
-        public FormTeplo()
+        public FormLoko()
         {
             InitializeComponent();
         }

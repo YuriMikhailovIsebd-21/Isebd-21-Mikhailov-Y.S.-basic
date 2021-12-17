@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsCars1
+﻿namespace WindowsFormTeplo
 {
-    partial class FormTeploConfig
+    partial class FormLokoConfig
     {
         /// <summary>
         /// Required designer variable.

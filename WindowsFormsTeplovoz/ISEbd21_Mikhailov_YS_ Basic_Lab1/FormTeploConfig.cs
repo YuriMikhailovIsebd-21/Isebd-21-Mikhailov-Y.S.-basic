@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsCars1
+namespace WindowsFormTeplo
 {
-    public partial class FormTeploConfig : Form
+    public partial class FormLokoConfig : Form
     {
-        public FormTeploConfig()
+        public FormLokoConfig()
         {
             InitializeComponent();
             btnCancel.Click += (object sender, EventArgs e) => { Close(); };

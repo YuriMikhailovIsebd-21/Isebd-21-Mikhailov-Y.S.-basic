@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsCars1
+namespace WindowsFormTeplo
 {
     public interface ITransport
     {
