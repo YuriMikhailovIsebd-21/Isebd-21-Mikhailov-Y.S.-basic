@@ -12,55 +12,115 @@ namespace WindowsFormsTeplovoz
 {
     public partial class DepoForm : Form
     {
+
+        private readonly ParkingCollection parkingCollection;
+
         public DepoForm()
         {
             InitializeComponent();
-            parking = new Parking<Lokomotiv>(pictureBoxParking.Width, pictureBoxParking.Height);
+            parkingCollection = new ParkingCollection(pictureBoxParking.Width, pictureBoxParking.Height);
             Draw();
         }
 
-        private readonly Parking<Lokomotiv> parking;
+        private void ReloadLevels()
+        {
+            int index = listBoxParkings.SelectedIndex;
+            listBoxParkings.Items.Clear();
+            for (int i = 0; i < parkingCollection.Keys.Count; i++)
+            {
+                listBoxParkings.Items.Add(parkingCollection.Keys[i]);
+            }
+            if (listBoxParkings.Items.Count > 0 && (index == -1 || index >=
+           listBoxParkings.Items.Count))
+            {
+                listBoxParkings.SelectedIndex = 0;
+            }
+            else if (listBoxParkings.Items.Count > 0 && index > -1 && index <
+           listBoxParkings.Items.Count)
+            {
+                listBoxParkings.SelectedIndex = index;
+            }
+        }
 
         private void Draw()
         {
             Bitmap bmp = new Bitmap(pictureBoxParking.Width, pictureBoxParking.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            parking.Draw(gr);
+            if (listBoxParkings.SelectedIndex > -1)
+            {//если выбран один из пуктов в listBox (при старте программы ни один пункт не будет выбран и может возникнуть ошибка, если мы попытаемся обратиться к элементу listBox
+                parkingCollection[listBoxParkings.SelectedItem.ToString()].Draw(gr);
+            }
+            else
+            {
+                gr.FillRectangle(new SolidBrush(Color.Transparent), 0, 0, pictureBoxParking.Width, pictureBoxParking.Height);
+            }
             pictureBoxParking.Image = bmp;
         }
-        
-        private void btnTake_Click(object sender, EventArgs e)
+
+
+        private void buttonDelParking_Click(object sender, EventArgs e)
         {
-            if (mTBLot.Text != "")
+            if (listBoxParkings.SelectedIndex > -1)
             {
-                var teplo = parking - Convert.ToInt32(mTBLot.Text);
-                if (teplo != null)
+                if (MessageBox.Show($"Удалить парковку { listBoxParkings.SelectedItem.ToString()}?", "Удаление", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    parkingCollection.DelParking(textBoxNewLevelName.Text);
+                    ReloadLevels();
+                }
+            }
+        }
+
+        private void buttonAddParking_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxNewLevelName.Text))
+            {
+                MessageBox.Show("Введите название парковки", "Ошибка",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            parkingCollection.AddParking(textBoxNewLevelName.Text);
+            ReloadLevels();
+        }
+
+
+
+
+        private void btnTake_Click(object sender, EventArgs e)
+       {
+            if (listBoxParkings.SelectedIndex > -1 && maskedTextBox.Text != "")
+            {
+                var car = parkingCollection[listBoxParkings.SelectedItem.ToString()] - Convert.ToInt32(maskedTextBox.Text);
+                if (car != null)
                 {
                     FormTeplo form = new FormTeplo();
-                    form.setLokomotiv(teplo);
+                    form.setLokomotiv(car);
                     form.ShowDialog();
                 }
-                mTBLot.Text = "";
                 Draw();
             }
         }
 
         private void btnParkTeplovoz_Click(object sender, EventArgs e)
         {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
+            if (listBoxParkings.SelectedIndex > -1)
             {
-                ColorDialog dialogDop = new ColorDialog();
-                if (dialogDop.ShowDialog() == DialogResult.OK)
+                ColorDialog dialog = new ColorDialog();
+                if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    var teplo = new Teplovoz(100, 1000, dialog.Color, dialogDop.Color, true, true);
-                    if ((parking + teplo) > -1)
+                    ColorDialog dialogDop = new ColorDialog();
+                    if (dialogDop.ShowDialog() == DialogResult.OK)
                     {
-                        Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Депо переполнен");
+                        var autotrain = new Teplovoz(100, 1000, dialog.Color, dialogDop.Color,
+                        true, true);
+                        if (parkingCollection[listBoxParkings.SelectedItem.ToString()] + autotrain)
+                        {
+                            Draw();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Депо переполнен!");
+                        }
                     }
                 }
             }
@@ -68,19 +128,30 @@ namespace WindowsFormsTeplovoz
 
         private void btnParkLokomotiv_Click(object sender, EventArgs e)
         {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
+            if (listBoxParkings.SelectedIndex > -1)
             {
-                var loko = new Lokomotiv(100, 1000, dialog.Color);
-                if ((parking + loko) > -1)
+                ColorDialog dialog = new ColorDialog();
+                if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    Draw();
-                }
-                else
-                {
-                    MessageBox.Show("Депо переполнен");
+                    var car = new Lokomotiv(100, 1000, dialog.Color);
+                    if (parkingCollection[listBoxParkings.SelectedItem.ToString()] + car)
+                    {
+                        Draw();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Депо переполнен!");
+                    }
                 }
             }
         }
+
+
+        private void listBoxParkings_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Draw();
+        }
+
+
     }
 }

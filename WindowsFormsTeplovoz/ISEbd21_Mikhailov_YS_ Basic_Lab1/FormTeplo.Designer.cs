@@ -136,8 +136,8 @@
 
         #endregion
 
-       
-       
+
+        protected System.Windows.Forms.Button buttonUp;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnСreateLokomotiv;
         private System.Windows.Forms.Button buttonLeft1;

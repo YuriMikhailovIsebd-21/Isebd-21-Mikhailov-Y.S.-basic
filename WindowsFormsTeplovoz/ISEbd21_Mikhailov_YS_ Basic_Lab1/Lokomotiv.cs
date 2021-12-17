@@ -82,7 +82,7 @@ namespace WindowsFormsTeplovoz
             //windows
             g.DrawRectangle(Pens.Blue, _startPosX + 13, _startPosY + 3, 10, 10);
             g.DrawRectangle(Pens.Blue, _startPosX + 33, _startPosY + 3, 10, 10);
-            g.DrawRectangle(Pens.Blue, _startPosX + 130, _startPosY + 3, 10, 10); 
+            g.DrawRectangle(Pens.Blue, _startPosX + 130, _startPosY + 3, 10, 10); ;
         }
     }
 }
