@@ -59,8 +59,7 @@ namespace WindowsFormTeplo
                 {
                     //Начинаем парковку 
                     sw.Write($"Parking{separator}{level.Key}{Environment.NewLine}");
-                    ITransport car = null;
-                    for (int i = 0; (car = level.Value.GetNext(i)) != null; i++)
+                    foreach (ITransport car in level.Value)
                     {
                         if (car != null)
                         {

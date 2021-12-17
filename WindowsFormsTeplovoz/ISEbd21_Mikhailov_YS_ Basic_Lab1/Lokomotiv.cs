@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace WindowsFormTeplo
 {
-    public class Lokomotiv : Vehicle
+    public class Lokomotiv : Vehicle , IEquatable<Lokomotiv>
     {
         private readonly int carWidth = 150;
         private readonly int carHeight = 50;
@@ -101,6 +101,47 @@ namespace WindowsFormTeplo
         public override string ToString()
         {
             return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}";
+        }
+
+        public bool Equals(Lokomotiv other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (GetType().Name != other.GetType().Name)
+            {
+                return false;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return false;
+            }
+            if (Weight != other.Weight)
+            {
+                return false;
+            }
+            if (MainColor != other.MainColor)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is Lokomotiv))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(obj as Lokomotiv);
+            }
         }
 
     }
