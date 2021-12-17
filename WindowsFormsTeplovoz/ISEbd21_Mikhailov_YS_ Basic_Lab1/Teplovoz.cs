@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace WindowsFormsCars1
+namespace WindowsFormTeplo
 {
     class Teplovoz : Lokomotiv
     {

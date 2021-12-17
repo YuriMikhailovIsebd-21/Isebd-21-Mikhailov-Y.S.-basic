@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsCars1
+namespace WindowsFormTeplo
 {
     public class ParkingCollection
     {
@@ -21,18 +21,18 @@ namespace WindowsFormsCars1
             parkingStages = new Dictionary<string, Parking<ITransport>>();
             this.pictureWidth = pictureWidth;
             this.pictureHeight = pictureHeight;
-        } 
+        }
 
         public void AddParking(string name)
         {
             if (!parkingStages.ContainsKey(name)) parkingStages.Add(name, new Parking<ITransport>(pictureWidth, pictureHeight));
         }
-        
+
         public void DelParking(string name)
         {
             if (parkingStages.ContainsKey(name)) parkingStages.Remove(name);
         }
-        
+
         public Parking<ITransport> this[string ind]
         {
             get
@@ -46,11 +46,7 @@ namespace WindowsFormsCars1
         }
 
 
-
-
-
-
-        public bool SaveData(string filename)
+        public void SaveData(string filename)
         {
             if (File.Exists(filename))
             {
@@ -84,14 +80,13 @@ namespace WindowsFormsCars1
                     }
                 }
             }
-            return true;
         }
 
-        public bool LoadData(string filename)
+        public void LoadData(string filename)
         {
             if (!File.Exists(filename))
             {
-                return false;
+                throw new FileNotFoundException();
             }
             using (StreamReader sr = new StreamReader(filename))
             {
@@ -104,7 +99,7 @@ namespace WindowsFormsCars1
                 else
                 {
                     //если нет такой записи, то это не те данные 
-                    return false;
+                    throw new ArgumentOutOfRangeException();
                 }
                 Lokomotiv car = null;
                 string key = string.Empty;
@@ -128,14 +123,11 @@ namespace WindowsFormsCars1
                         }
                         if (!(parkingStages[key] + car))
                         {
-                            return false;
+                            throw new ParkingOverflowException();
                         }
                     }
                 }
             }
-            return true;
         }
-
-
     }
 }

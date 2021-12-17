@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsCars1
+﻿namespace WindowsFormTeplo
 {
-	 public partial class FormTeplo
+	 public partial class FormLoko
 	{
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -61,7 +61,7 @@
             // buttonLeft1
             // 
             this.buttonLeft1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLeft1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.влево_кружок;
+            this.buttonLeft1.BackgroundImage = global::WindowsFormTeplo.Properties.Resources.влево_кружок;
             this.buttonLeft1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLeft1.Location = new System.Drawing.Point(774, 425);
             this.buttonLeft1.Name = "buttonLeft1";
@@ -73,7 +73,7 @@
             // buttonRight1
             // 
             this.buttonRight1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRight1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вправо111;
+            this.buttonRight1.BackgroundImage = global::WindowsFormTeplo.Properties.Resources.вправо111;
             this.buttonRight1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRight1.Location = new System.Drawing.Point(846, 425);
             this.buttonRight1.Name = "buttonRight1";
@@ -85,7 +85,7 @@
             // buttonUp1
             // 
             this.buttonUp1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUp1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вверх_кружок1;
+            this.buttonUp1.BackgroundImage = global::WindowsFormTeplo.Properties.Resources.вверх_кружок1;
             this.buttonUp1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonUp1.Location = new System.Drawing.Point(810, 392);
             this.buttonUp1.Name = "buttonUp1";
@@ -97,7 +97,7 @@
             // buttonDown1
             // 
             this.buttonDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDown1.BackgroundImage = global::WindowsFormsCars1.Properties.Resources.вниз_кружок;
+            this.buttonDown1.BackgroundImage = global::WindowsFormTeplo.Properties.Resources.вниз_кружок;
             this.buttonDown1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDown1.Location = new System.Drawing.Point(810, 425);
             this.buttonDown1.Name = "buttonDown1";
