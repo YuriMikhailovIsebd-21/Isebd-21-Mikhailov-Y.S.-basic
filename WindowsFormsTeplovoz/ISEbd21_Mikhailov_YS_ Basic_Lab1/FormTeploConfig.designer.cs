@@ -1,6 +1,6 @@
-﻿namespace ISEbd_21_Mikhailov_YS_lab5
+﻿namespace WindowsFormsCars1
 {
-    partial class FormLokoConfig
+    partial class FormTeploConfig
     {
         /// <summary>
         /// Required designer variable.

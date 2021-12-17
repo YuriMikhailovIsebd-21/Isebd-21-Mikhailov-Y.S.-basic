@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
     public class Lokomotiv : Vehicle
     {
         private readonly int carWidth = 150;
         private readonly int carHeight = 50;
+
+        protected readonly char separator = ';';
 
         public Lokomotiv(int maxSpeed, float weight, Color mainColor)
         {
@@ -18,6 +20,18 @@ namespace ISEbd_21_Mikhailov_YS_lab5
             Weight = weight;
             MainColor = mainColor;
         }
+
+        public Lokomotiv(string info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 3)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+            }
+        }
+
 
         public override void MoveTransport(Direction direction)
         {
@@ -83,5 +97,11 @@ namespace ISEbd_21_Mikhailov_YS_lab5
             g.DrawRectangle(Pens.Blue, _startPosX + 33, _startPosY + 3, 10, 10);
             g.DrawRectangle(Pens.Blue, _startPosX + 130, _startPosY + 3, 10, 10);
         }
+
+        public override string ToString()
+        {
+            return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}";
+        }
+
     }
 }

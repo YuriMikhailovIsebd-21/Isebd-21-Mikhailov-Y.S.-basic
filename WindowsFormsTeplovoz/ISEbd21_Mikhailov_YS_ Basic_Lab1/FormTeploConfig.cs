@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ISEbd_21_Mikhailov_YS_lab5
+namespace WindowsFormsCars1
 {
-    public partial class FormLokoConfig : Form
+    public partial class FormTeploConfig : Form
     {
-        public FormLokoConfig()
+        public FormTeploConfig()
         {
             InitializeComponent();
             btnCancel.Click += (object sender, EventArgs e) => { Close(); };
