@@ -1,0 +1,20 @@
+C:\Users\anast_000\Source\Repos\TP\TP\bin\Debug\TP.exe.config
+C:\Users\anast_000\Source\Repos\TP\TP\bin\Debug\TP.exe
+C:\Users\anast_000\Source\Repos\TP\TP\bin\Debug\TP.pdb
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.csproj.AssemblyReference.cache
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.FormMono.resources
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.Properties.Resources.resources
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.csproj.GenerateResource.cache
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.csproj.CoreCompileInputs.cache
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.exe
+C:\Users\anast_000\Source\Repos\TP\TP\obj\Debug\TP.pdb
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\bin\Debug\TP.exe.config
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\bin\Debug\TP.exe
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\bin\Debug\TP.pdb
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\ISEbd21_Mikhailov_YS_ Basic_Lab1.csproj.AssemblyReference.cache
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\TP.Properties.Resources.resources
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\ISEbd21_Mikhailov_YS_ Basic_Lab1.csproj.GenerateResource.cache
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\ISEbd21_Mikhailov_YS_ Basic_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\TP.exe
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\TP.pdb
+C:\Users\Юрий\OneDrive\Desktop\ISEbd21_Mikhailov_YS_ Basic_Lab1\ISEbd21_Mikhailov_YS_ Basic_Lab1\obj\Debug\ISEbd21_Mikhailov_YS_Basic_Lab1.FormTeplo.resources
